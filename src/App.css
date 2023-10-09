@@ -1,0 +1,83 @@
+/*====google fonts===*/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+  /*css variables*/
+
+  :root{
+    /*colors*/
+    /*color mode HSL(hue, saturation, lightness) */
+    --first-color: hsl(271, 76%, 53%);
+    --title-color: hsl(0, 0%, 40%);
+    --text-color: hsl(0, 0%, 50%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 93);
+    --border-color: hsl(0, 0%, 87%);
+    --text-white: #fff;
+
+    /*font and typography*/
+    --body-font: 'Open Sans', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+
+    --big-font-size: 3.5rem;
+    --h1-font-size: 3.125rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 1.875rem;
+    --large-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --tiny-font-size: .75rem;
+
+    /*font weight*/
+
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+
+  }
+
+  /* base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body,
+  input,
+  textarea,
+   {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-500);
+
+  }
+  body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+    h1,
+    h2,
+    h3,
+    h4{
+        font-family: var(--heading-font);
+        font-weight: var(--weight-600);
+        color: var(--title-color);
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button,
+    input,
+    textarea{
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
