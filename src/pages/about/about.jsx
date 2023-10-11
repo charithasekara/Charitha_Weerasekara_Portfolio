@@ -2,7 +2,8 @@ import React from 'react';
 import Info from '../../components/Info';
 import Status from '../../components/Status';
 import {FaDownload} from "react-icons/fa" ;
-import CV from "../../assets/steve-CV.pdf"
+import CV from "../../assets/steve-CV.pdf";
+import Skills from '../../components/Skills';
 import './about.css'
 
 function About() {
@@ -35,6 +36,17 @@ function About() {
           <div className="stats grid">
             <Status />
           </div>
+        </div>
+      </section>
+
+      <div className="separator"></div>
+      <section className="skills">
+        <h3 className="section__subtitle subtitle__center">
+            My Skills
+        </h3>
+        <div className="skills__container grid">
+            <Skills />
+
         </div>
       </section>
     </main>

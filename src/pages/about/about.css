@@ -32,3 +32,24 @@
     font-size: var(--h1-font-size);
     line-height: 1.2;
 }
+.stats__title{
+    font-size: var(--small-font-size);
+    line-height: 1.6;
+    padding-left: 45px;
+    position: relative;
+
+}
+.stats__title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 30px;
+    height: 1px;
+    background-color:var(--text-color);
+}
+.separator{
+    border-top: 1px solid var(--border-color);
+    max-width: 40%;
+    margin: 72px auto 56px;
+}
