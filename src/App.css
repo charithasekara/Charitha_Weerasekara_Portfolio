@@ -46,12 +46,7 @@
   body,
   input,
   textarea,
-   {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    font-weight: var(--weight-500);
-
-  }
+  
   body{
     background-color: var(--body-color);
     color: var(--text-color);
@@ -81,3 +76,70 @@
         max-width: 100%;
         height: auto;
     }
+
+    /*--reusable css---*/
+
+    .container{
+      max-width: 1140px;
+      margin-inline: auto;
+    }
+    
+    .grid{
+      display: grid;
+      gap: 30px;
+    }
+    .section{
+      padding-block: 70px;
+    }
+    .section__title{
+      font-size: var(--big-font-size);
+      font-weight: var(--weight-800);
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .button {
+      display: inline-block;
+      color: var(--title-color);
+      border: 1px solid var(--first-color);
+      padding: 10px 70px 10px 20px;
+      border-radius: 35px;
+      font-family: var(--second-font);
+      font-size: var(--small-font-size);
+      font-weight: var(--weight-500);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s ease-in-out;
+      text-align: center;
+    }
+    
+    .button:hover {
+      color: var(--text-white);
+    }
+    
+    .button:hover::before { /* Removed the space before ::before */
+      transform: translateX(0);
+    }
+    
+    .button::before { /* Removed the space before ::before */
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: var(--first-color);
+      transform: translateX(100%);
+      z-index: -1;
+      transition: all 0.3s ease-out;
+    }
+    
+    .button__icon {
+      background-color: var(--first-color);
+      position: absolute;
+      inset-block: -9px;
+      right: 0;
+      width: 55px;
+      border-radius: 100%;
+      color: var(--text-white);
+      font-size: var(--large-font-size);
+      text-align: center;
+      line-height: 60px;
+    }
+    

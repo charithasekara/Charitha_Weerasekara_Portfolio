@@ -1,0 +1,100 @@
+.home {
+    grid-template-columns: 4.32fr 7.68fr;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+    background-image: url("../../assets/back2-01.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+
+.home__img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+}
+
+.home__data {
+    max-width: 600px;
+    margin-inline: auto;
+    padding-top: 20px;
+}
+
+.home__title{
+    position: relative;
+    font-size: var(--h1-font-size);
+    line-height: 1.24;
+    padding-left: 70px;
+
+}
+.home__title span{
+    color: var(--first-color);
+}
+.home__title ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 40px;
+    height: 5px;
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+.home__description{
+    line-height: 2.125;
+    margin-block: 16px 32px;
+}
+
+/* new button */
+.signupBtn {
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 13px;
+    gap: 9px;
+    color: white;
+    background: linear-gradient(to right,rgb(255, 128, 187),rgb(198, 128, 255));
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+    font-weight: 600;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 7.5px;
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: all .5s ease;
+  }
+  
+  .signupBtn:hover .arrow {
+    width: calc(160px - (7.5px)*2);
+  }
+
+  /* end new button */
+  
+  /* New styles for smaller screens */
+@media (max-width: 768px) {
+    .home {
+      grid-template-columns: 1fr; /* Full width for smaller screens */
+    }
+  
+    .home__img {
+      width: 100%; /* Adjust image width for full width */
+      border-radius: 0; /* Remove border-radius for full width */
+      box-shadow: none; /* Remove box shadow for full width */
+    }
+  }
