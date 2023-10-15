@@ -31,5 +31,30 @@
     margin: 0 auto;
     display: block;
     padding-top: 50px;
+    
+
   }
   
+  @media (max-width: 768px) {
+    .card-set {
+        flex-direction: row; /* Display cards in two columns for smaller screens */
+    }
+    
+    .card {
+        width: calc(25% ); /* Calculate width for two columns with a gap */
+        height: auto;
+        margin-right: 5px;
+        margin-bottom: 10px; /* Adjust margins for two columns */
+        align-items: center;
+    }
+    .card img {
+      max-width: 50%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      padding-top: 25px;
+      padding-bottom: 25px;
+  
+    }
+    
+}

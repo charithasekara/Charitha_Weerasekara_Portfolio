@@ -70,6 +70,7 @@
 @media screen and ( min-width: 1024px ) {
     .nav__menu {
         all: unset;
+        z-index: 2000;
     }
 
     .nav__toggle {

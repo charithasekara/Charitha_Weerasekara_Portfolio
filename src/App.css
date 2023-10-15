@@ -1,5 +1,6 @@
 /*====google fonts===*/
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700;800&display=swap');
+
 
   /*css variables*/
 
@@ -15,14 +16,14 @@
     --text-white: #fff;
 
     /*font and typography*/
-    --body-font: 'Open Sans', sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --heading-font: 'Poppins', sans-serif;
 
     --big-font-size: 3.5rem;
     --h1-font-size: 3.125rem;
     --h2-font-size: 2.5rem;
     --h3-font-size: 1.875rem;
-    --large-font-size: 1.25rem;
+    --large-font-size: 1.15rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --tiny-font-size: .75rem;
@@ -54,6 +55,9 @@
     h1,
     h2,
     h3,
+    p,
+    
+    span,
     h4{
         font-family: var(--heading-font);
         font-weight: var(--weight-600);
@@ -65,6 +69,7 @@
     a{
         text-decoration: none;
     }
+    
     button,
     input,
     textarea{

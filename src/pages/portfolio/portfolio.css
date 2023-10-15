@@ -89,10 +89,63 @@
 }
 .item__icon{
     display: flex;
+    margin-right: 10px;
 
 }
 .item__title,
 .item__details{
     color: var(--title-color);
     font-size: var(--small-font-size);
+}
+
+@media (max-width: 768px){
+
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr); /* Display one card per row on all screen sizes */
+    }
+    
+    .portfolio__item {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        width: 100%; /* Card takes full width */
+        margin-bottom: 20px; /* Add spacing between cards */
+        
+    }
+
+    .portfolio__modal{
+        position: fixed;
+        display: grid;
+        place-items: center;
+     
+    }
+    .portfolio__modal-content {
+        padding: 20px; /* Adjust padding for smaller screens */
+        position: fixed;
+        width: 95%;
+    }
+    .item__title,
+    .item__details{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    margin-left: -10px;
+    
+}
+.modal__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.modal__close{
+    position: absolute;
+    top: -5.5%;
+    right: -5.5%;
+    height: 35px;
+    filter: invert(0.8);
+    width: 50px;
+
+}
+    
 }

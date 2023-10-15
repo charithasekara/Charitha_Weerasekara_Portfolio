@@ -5,6 +5,9 @@ import{FaFacebookF} from 'react-icons/fa';
 import{FaTwitter} from 'react-icons/fa';
 import{FaYoutube} from 'react-icons/fa';
 import{ImDribbble} from 'react-icons/im';
+import{PiFigmaLogoThin} from 'react-icons/pi';
+import {FaGithub} from 'react-icons/fa';
+import {TbBrandFiverr} from 'react-icons/tb';
 
 import{FiSend} from 'react-icons/fi';
 import'./contact.css';
@@ -42,19 +45,19 @@ const Contact = () => {
 
           <div className="contact__socials">
 
-            <a href="https://facebook.com" className="contact__social-link">
-              <FaFacebookF/>
+            <a href="https://www.fiverr.com/charithsekara" className="contact__social-link">
+              <TbBrandFiverr/>
             </a>
 
-            <a href="https://twitter.com" className="contact__social-link">
-              <FaTwitter/>
+            <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1102977810588365682" className="contact__social-link">
+              <PiFigmaLogoThin/>
             </a>
 
-            <a href="https://youtube.com" className="contact__social-link">
-              <FaYoutube/>
+            <a href="https://github.com/charithasekara" className="contact__social-link">
+              <FaGithub/>
             </a>
 
-            <a href="https://dribble.com" className="contact__social-link">
+            <a href="https://dribble.com/CharithaSekra" className="contact__social-link">
               <ImDribbble/>
             </a>
 
