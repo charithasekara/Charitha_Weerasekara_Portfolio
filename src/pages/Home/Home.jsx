@@ -17,7 +17,7 @@ const Home = () => {
           <h1 className="home__title">
             <span>I'm Charitha Weerasekara</span>
             <br/>
-            UI_UX Enginer
+            UI/UX Enginer
           </h1>
           <p className="home__description">
           I am a multidisciplinary creative, blending UX/UI design, frontend development, and graphic design into a seamless digital experience. With a strong eye for detail and a passion for user-centric design. My graphic design skills add a touch of storytelling to every project. Welcome to my portfolio, where art and technology converge to create captivating digital journeys.
