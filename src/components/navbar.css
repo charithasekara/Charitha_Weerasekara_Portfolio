@@ -24,6 +24,7 @@
 .nav__name{
     color: var(--title-color);
     font-size: 24px;
+    
 }
 
 .nav__name{
@@ -83,7 +84,7 @@
         align-items: center;
     }
 
-    .nav_item {
+    .nav__item {
         margin-block: 20px;
 
     }

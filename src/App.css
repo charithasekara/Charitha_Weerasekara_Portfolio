@@ -10,7 +10,7 @@
     --title-color: hsl(0, 0%, 40%);
     --text-color: hsl(0, 0%, 50%);
     --body-color: hsl(0, 0%, 100%);
-    --container-color: hsl(0, 0%, 93);
+    --container-color: hsl(0, 0%, 95%);
     --border-color: hsl(0, 0%, 87%);
     --text-white: #fff;
 
@@ -82,6 +82,7 @@
     .container{
       max-width: 1140px;
       margin-inline: auto;
+      padding-inline: 15px;
     }
     
     .grid{

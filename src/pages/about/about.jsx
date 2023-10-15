@@ -4,6 +4,8 @@ import Status from '../../components/Status';
 import {FaDownload} from "react-icons/fa" ;
 import CV from "../../assets/steve-CV.pdf";
 import Skills from '../../components/Skills';
+import { resume } from '../../data';
+import ResumeItem from '../../components/ResumeItem';
 import './about.css'
 
 function About() {
@@ -26,7 +28,7 @@ function About() {
             </ul>
 
             <a href={CV} download='' className="button">
-              Download CV 
+              Download Cv
               <span className="button__icon">
               <FaDownload/>
             </span>
@@ -40,6 +42,7 @@ function About() {
       </section>
 
       <div className="separator"></div>
+
       <section className="skills">
         <h3 className="section__subtitle subtitle__center">
             My Skills
@@ -49,6 +52,35 @@ function About() {
 
         </div>
       </section>
+
+      <div className="separator"></div>
+
+      <div className="resume">
+        <h3 className="section__subtitle subtitle__center">
+          Experience & Education
+        </h3>
+
+        <div className="resume__container grid">
+          <div className="resume__data">
+            {resume.map((val) =>{
+              if (val.category === 'experience'){
+                return <ResumeItem key={val.id} {...val} />;
+              }
+            })}
+
+          </div>
+
+          <div className="resume__data">
+            {resume.map((val) =>{
+              if (val.category === 'education'){
+                return <ResumeItem key={val.id} {...val} />;
+              }
+            })}
+
+          </div>
+
+        </div>
+      </div>
     </main>
 
   );
